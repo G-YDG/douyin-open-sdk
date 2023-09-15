@@ -1,0 +1,46 @@
+{
+    "name": "ydg/douyin-open-sdk",
+    "description": "Easier to access douyin open api",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "sdk",
+        "douyin",
+        "douyin-open",
+        "douyin-open-sdk"
+    ],
+    "authors": [
+        {
+            "name": "ydg",
+            "email": "1028180290@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0",
+        "ydg/foudation-sdk": "^1.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.12",
+        "phpunit/phpunit": "^9.5",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ydg\\DouyinOpenSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YdgTest\\DouyinOpenSdk\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix ."
+    }
+}
